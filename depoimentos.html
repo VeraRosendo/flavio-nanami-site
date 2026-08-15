@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Depoimentos | Flavio Nanami - Personal Trainer</title>
+<meta name="description" content="Depoimentos de alunos sobre o acompanhamento presencial e online com o Flavio Nanami, Personal Trainer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --preto: #111111;
+    --cinza-escuro: #333333;
+    --cinza-claro: #f5f5f5;
+    --branco: #ffffff;
+    --destaque: #c9a04a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--cinza-escuro);
+    line-height: 1.6;
+    background-color: var(--branco);
+  }
+  header {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo img { height: 48px; width: auto; vertical-align: middle; }
+  nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 0.95rem;
+  }
+  nav a:hover { color: var(--destaque); }
+
+  .page-hero {
+    background-color: var(--cinza-claro);
+    padding: 3.5rem 2rem;
+    text-align: center;
+  }
+  .page-hero h1 {
+    font-size: 2.2rem;
+    color: var(--preto);
+  }
+  .page-hero p {
+    max-width: 640px;
+    margin: 1rem auto 0;
+    color: var(--cinza-escuro);
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+  section.categoria + section.categoria { margin-top: 3.5rem; }
+  section.categoria h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    color: var(--preto);
+    border-bottom: 2px solid var(--destaque);
+    display: inline-block;
+    padding-bottom: 0.3rem;
+  }
+
+  .depoimento-card {
+    margin-top: 1.5rem;
+    background-color: var(--cinza-claro);
+    border-radius: 6px;
+    padding: 2.2rem 2.2rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  }
+  .depoimento-texto {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--cinza-escuro);
+  }
+  .depoimento-texto p {
+    margin-bottom: 1rem;
+  }
+  .depoimento-assinatura {
+    font-family: 'Caveat', cursive;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--destaque);
+    text-align: right;
+    margin-top: 0.5rem;
+  }
+  .em-breve {
+    color: #888888;
+    font-style: italic;
+    margin-top: 1rem;
+  }
+
+  .cta-box {
+    background-color: var(--cinza-claro);
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+  }
+  .cta-box p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+  .btn-cta {
+    display: inline-block;
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 0.9rem 2.2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+  }
+  .btn-cta:hover { background-color: var(--destaque); }
+
+  footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    text-align: center;
+    padding: 2.5rem 2rem;
+  }
+  footer a { color: var(--branco); text-decoration: none; font-weight: 600; }
+  footer a:hover { color: var(--destaque); }
+  footer .canais { margin-top: 1rem; font-size: 0.9rem; color: #cccccc; }
+  footer .creditos { margin-top: 1.5rem; font-size: 0.75rem; color: #888888; font-style: italic; }
+
+  @media (max-width: 600px) {
+    .page-hero h1 { font-size: 1.7rem; }
+    nav a { margin-left: 0.8rem; font-size: 0.85rem; }
+    .depoimento-card { padding: 1.6rem 1.4rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><a href="index.html"><img src="images/logo-flavio-nanami.png" alt="Flavio Nanami - Personal Trainer"></a></div>
+  <nav>
+    <a href="index.html#sobre">Sobre</a>
+    <a href="index.html#atendimento">Atendimento</a>
+    <a href="index.html#orientacoes">Orientações</a>
+    <a href="index.html#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Depoimentos</h1>
+  <p>O que os alunos dizem sobre o acompanhamento presencial e online.</p>
+</section>
+
+<main>
+
+  <section class="categoria" id="presencial">
+    <h2>Presencial</h2>
+    <p class="em-breve">Em breve, depoimentos de alunos do atendimento presencial.</p>
+  </section>
+
+  <section class="categoria" id="online">
+    <h2>Online (MFITpersonal)</h2>
+    <div class="depoimento-card">
+      <div class="depoimento-texto">
+        <p>Comecei a fazer acompanhamento com personal trainer on-line e preciso dizer: estou achando o serviço espetacular!</p>
+        <p>Tenho 4 treinos de força e 1 treino aeróbio programados pelo Flavio, conforme minhas preferências. Nos treinos de força, está tudo organizado: vídeo mostrando a execução de cada exercício, número de séries, carga, tempo de intervalo e as orientações do personal.</p>
+        <p>Para mim, existe algo ainda mais importante nesse acompanhamento: eu gosto de ter uma direção. Quando treino por conta própria, preciso decidir o que fazer, quanto fazer, quando aumentar a carga, qual exercício escolher. E, para mim, ter um profissional que estabelece um caminho torna tudo muito mais fácil. Eu não preciso ficar pensando sobre o próximo passo, eu simplesmente sigo, e isso torna o processo mais leve.</p>
+        <p>Tenho a liberdade de escolher quando vou treinar, mas não preciso decidir o que vou fazer. O treino já está ali, preparado exclusivamente para mim. Essa é uma grande vantagem: quando o exercício deixa de ser uma tarefa que preciso pensar e passa a fazer parte de uma rotina que simplesmente sigo, tudo fica mais leve.</p>
+        <p>Também tem algo mais que considero importante: eu posso atualizar as cargas conforme vou progredindo e, ao final de cada treino, registrar minhas observações. E do outro lado, o Flavio consegue acompanhar em tempo real o que está acontecendo. E se tenho alguma dúvida, posso falar diretamente com ele pelo WhatsApp. É on-line, mas o acompanhamento é muito presente.</p>
+        <p>E gosto demais da liberdade. Eu não preciso me adaptar ao horário de uma academia ou ao horário fixo de um profissional. Eu escolho quando vou treinar sabendo que, no meu horário, o profissional estará ali, orientando, acompanhando minha evolução e dando direção ao meu treino.</p>
+        <p>Para mim, essa combinação de liberdade, orientação e acompanhamento individualizado faz toda a diferença. Não é simplesmente receber uma ficha de exercícios. É ter um profissional acompanhando o meu processo, mesmo à distância.</p>
+        <p>E quando um serviço realmente funciona, a melhor propaganda é contar a própria experiência.</p>
+      </div>
+      <p class="depoimento-assinatura">V.R. ❤</p>
+    </div>
+  </section>
+
+</main>
+
+<div class="cta-box">
+  <p>Treino individualizado, com acompanhamento técnico especializado.</p>
+  <a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." class="btn-cta" target="_blank">Agendar Avaliação</a>
+</div>
+
+<footer id="contato">
+  <p>Agende sua avaliação:</p>
+  <p style="margin-top:0.5rem;"><a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." target="_blank">Falar no WhatsApp</a></p>
+  <p class="canais">Atendimento também disponível pelo <a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." target="_blank">MFITpersonal</a></p>
+  <p class="creditos">Site construído com ajuda do Claude, da Anthropic.</p>
+</footer>
+
+</body>
+</html>
