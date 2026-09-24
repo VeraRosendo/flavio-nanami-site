@@ -3,119 +3,147 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fisiologia do Metabolismo | Flávio Nanami - Personal Trainer</title>
+<title>Fisiologia do Metabolismo | Flavio Nanami - Personal Trainer</title>
 <meta name="description" content="TMB, gasto energético total, adaptação metabólica e o papel da musculação, do cardio e do NEAT no emagrecimento.">
+<link rel="icon" href="images/logo-flavio-nanami.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --preto: #111111;
-    --cinza-escuro: #333333;
-    --cinza-claro: #f5f5f5;
-    --branco: #ffffff;
-    --destaque: #c9a04a;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: var(--cinza-escuro);
-    line-height: 1.6;
-    background-color: var(--branco);
-  }
-  header {
-    background-color: var(--preto);
-    color: var(--branco);
-    padding: 1.2rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header .logo img { height: 48px; width: auto; vertical-align: middle; }
-  nav a {
-    color: var(--branco);
-    text-decoration: none;
-    margin-left: 1.5rem;
-    font-size: 0.95rem;
-  }
-  nav a:hover { color: var(--destaque); }
-
-  .page-hero {
-    background-color: var(--cinza-claro);
-    padding: 3.5rem 2rem;
-    text-align: center;
-  }
-  .page-hero h1 {
-    font-size: 2.2rem;
-    color: var(--preto);
-  }
-  .page-hero p {
-    max-width: 640px;
-    margin: 1rem auto 0;
-    color: var(--cinza-escuro);
-  }
-
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-  }
-  article + article { margin-top: 3.5rem; }
-  article h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1.2rem;
-    color: var(--preto);
-    border-bottom: 2px solid var(--destaque);
-    display: inline-block;
-    padding-bottom: 0.3rem;
-  }
-  article p { margin-bottom: 1rem; }
-  article figure { margin: 1.8rem 0; text-align: center; }
-  article figure img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.12);
-  }
-  article .fonte { font-size: 0.85rem; color: #777777; margin-top: 1.5rem; }
-
-  .cta-box {
-    background-color: var(--cinza-claro);
-    text-align: center;
-    padding: 3rem 2rem;
-    margin-top: 2rem;
-  }
-  .cta-box p { margin-bottom: 1.5rem; font-size: 1.05rem; }
-  .btn-cta {
-    display: inline-block;
-    background-color: var(--preto);
-    color: var(--branco);
-    padding: 0.9rem 2.2rem;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: background-color 0.2s ease;
-  }
-  .btn-cta:hover { background-color: var(--destaque); }
-
-  footer {
-    background-color: var(--preto);
-    color: var(--branco);
-    text-align: center;
-    padding: 2.5rem 2rem;
-  }
-  footer a { color: var(--branco); text-decoration: none; font-weight: 600; }
-  footer a:hover { color: var(--destaque); }
-  footer .canais { margin-top: 1rem; font-size: 0.9rem; color: #cccccc; }
-  footer .creditos { margin-top: 1.5rem; font-size: 0.75rem; color: #888888; font-style: italic; }
-
-  @media (max-width: 600px) {
-    .page-hero h1 { font-size: 1.7rem; }
-    nav a { margin-left: 0.8rem; font-size: 0.85rem; }
-  }
+:root {
+--preto: #111111;
+--cinza-escuro: #333333;
+--cinza-claro: #f5f5f5;
+--branco: #ffffff;
+--destaque: #c9a04a;
+  --destaque-escuro: #8a6d26;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+h1, h2, h3, h4 { font-family: 'Oswald', 'Helvetica Neue', Arial, sans-serif; letter-spacing: 0.3px; }
+body {
+font-family: 'Helvetica Neue', Arial, sans-serif;
+color: var(--cinza-escuro);
+line-height: 1.6;
+background-color: var(--branco);
+}
+header {
+background-color: var(--preto);
+color: var(--branco);
+padding: 1.2rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+header .logo img { height: 48px; width: auto; vertical-align: middle; }
+nav a {
+color: var(--branco);
+text-decoration: none;
+margin-left: 1.5rem;
+font-size: 0.95rem;
+}
+nav a:hover { color: var(--destaque); }
+.page-hero {
+background-color: var(--cinza-claro);
+padding: 3.5rem 2rem;
+text-align: center;
+}
+.page-hero h1 {
+font-size: 2.2rem;
+color: var(--preto);
+}
+.page-hero p {
+max-width: 640px;
+margin: 1rem auto 0;
+color: var(--cinza-escuro);
+}
+main {
+max-width: 800px;
+margin: 0 auto;
+padding: 3rem 2rem;
+}
+article + article { margin-top: 3.5rem; }
+article h2 {
+font-size: 1.6rem;
+margin-bottom: 1.2rem;
+color: var(--preto);
+border-bottom: 2px solid var(--destaque);
+display: inline-block;
+padding-bottom: 0.3rem;
+}
+article p { margin-bottom: 1rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+article figure {
+  margin: 1.8rem 0;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  border-top: 3px solid var(--destaque);
+  border-radius: 8px;
+  padding: 14px;
+  background-color: #fafafa;
+}
+article figure img {
+max-width: 100%;
+height: auto;
+border-radius: 6px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+article .fonte { font-size: 0.85rem; color: #777777; margin-top: 1.5rem; }
+.cta-box {
+background-color: var(--cinza-claro);
+text-align: center;
+padding: 3rem 2rem;
+margin-top: 2rem;
+}
+.cta-box p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+.btn-cta {
+display: inline-block;
+background-color: var(--preto);
+color: var(--branco);
+padding: 0.9rem 2.2rem;
+text-decoration: none;
+border-radius: 4px;
+font-weight: 600;
+transition: background-color 0.2s ease;
+}
+.btn-cta:hover { background-color: var(--destaque); }
+footer {
+background-color: var(--preto);
+color: var(--branco);
+text-align: center;
+padding: 2.5rem 2rem;
+}
+footer a { color: var(--branco); text-decoration: none; font-weight: 600; }
+footer a:hover { color: var(--destaque); }
+footer .canais { margin-top: 1rem; font-size: 0.9rem; color: #cccccc; }
+footer .creditos { margin-top: 1.5rem; font-size: 0.75rem; color: #888888; font-style: italic; }
+.whatsapp-float {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #25D366;
+color: #ffffff;
+border-radius: 50%;
+width: 56px;
+height: 56px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+text-decoration: none;
+font-size: 1.7rem;
+z-index: 999;
+transition: transform 0.2s ease;
+}
+.whatsapp-float:hover { transform: scale(1.08); }
+@media (max-width: 600px) {
+.page-hero h1 { font-size: 1.7rem; }
+nav a { margin-left: 0.8rem; font-size: 0.85rem; }
+}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="logo"><a href="index.html"><img src="images/logo-flavio-nanami.png" alt="Flávio Nanami - Personal Trainer"></a></div>
+<header id="topo">
+  <div class="logo"><a href="index.html"><img src="images/logo-flavio-nanami.png" alt="Flavio Nanami - Personal Trainer"></a></div>
   <nav>
     <a href="index.html#sobre">Sobre</a>
     <a href="index.html#atendimento">Atendimento</a>
@@ -126,42 +154,46 @@
 
 <section class="page-hero">
   <h1>Fisiologia do Metabolismo</h1>
-  <p>TMB, gasto energético total e adaptação metabólica — entenda como o corpo realmente funciona.</p>
+  <p>TMB, gasto energético total e adaptação metabólica: entenda como o corpo realmente funciona.</p>
 </section>
 
 <main>
 
   <article>
     <h2>Taxa Metabólica Basal (TMB)</h2>
-    <p>A Taxa Metabólica Basal representa a energia mínima necessária para a manutenção das funções vitais em repouso — atividade cardíaca, respiratória, cerebral e demais processos orgânicos essenciais. A TMB, no entanto, não equivale ao gasto energético total diário: representa apenas a base sobre a qual se somam os demais componentes do gasto.</p>
+    <p>A Taxa Metabólica Basal representa a energia mínima necessária para a manutenção das funções vitais em repouso: atividade cardíaca, respiratória, cerebral e demais processos orgânicos essenciais. A TMB, no entanto, não equivale ao gasto energético total diário: representa apenas a base sobre a qual se somam os demais componentes do gasto.</p>
     <figure>
       <img src="images/metabolismo-basal.jpeg" alt="O que é metabolismo basal">
     </figure>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Gasto Energético Total Diário</h2>
-    <p>O gasto energético diário resulta da soma entre a TMB e outros componentes: a atividade física estruturada (treino), o efeito térmico dos alimentos (digestão) e a atividade física não relacionada ao exercício (NEAT — deslocamentos, tarefas domésticas, postura, movimentação espontânea). Um indivíduo com TMB de 1.400 kcal, por exemplo, apresentará gasto total superior a esse valor, na dependência do seu nível geral de atividade.</p>
+    <p>O gasto energético diário resulta da soma entre a TMB e outros componentes: a atividade física estruturada (treino), o efeito térmico dos alimentos (digestão) e a atividade física não relacionada ao exercício (NEAT: deslocamentos, tarefas domésticas, postura, movimentação espontânea). Um indivíduo com TMB de 1.400 kcal, por exemplo, apresentará gasto total superior a esse valor, na dependência do seu nível geral de atividade.</p>
     <figure>
       <img src="images/metabolismo-tmb-conta.jpeg" alt="TMB é só o começo da conta">
     </figure>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Balanço Energético e Emagrecimento</h2>
-    <p>O processo de emagrecimento depende, de forma geral, da manutenção de um déficit energético sustentado ao longo do tempo — ou seja, gasto energético superior ao consumo calórico. Isso é obtido pela combinação de ajustes na alimentação, preservação de massa muscular, aumento da atividade física estruturada e redução do tempo em comportamento sedentário.</p>
+    <p>O processo de emagrecimento depende, de forma geral, da manutenção de um déficit energético sustentado ao longo do tempo: gasto energético superior ao consumo calórico. Isso é obtido pela combinação de ajustes na alimentação, preservação de massa muscular, aumento da atividade física estruturada e redução do tempo em comportamento sedentário.</p>
     <figure>
       <img src="images/metabolismo-emagrecer.jpeg" alt="Para emagrecer, o que fazer">
     </figure>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Adaptação Metabólica e Compensação Energética</h2>
-    <p>O organismo não responde ao aumento do gasto energético de forma estritamente linear. Em determinados contextos, parte do gasto adicional gerado pelo exercício pode ser parcialmente compensada por reduções em outros componentes — como menor movimentação espontânea ou maior eficiência metabólica em tarefas cotidianas — resultando em aumento líquido do gasto diário inferior ao previsto exclusivamente pelo cálculo calórico do exercício. Esse fenômeno não invalida os benefícios do exercício físico; indica, sim, a necessidade de estratégias consistentes e sustentáveis ao longo do tempo, e não apenas isoladas.</p>
+    <p>O organismo não responde ao aumento do gasto energético de forma estritamente linear. Em determinados contextos, parte do gasto adicional gerado pelo exercício pode ser parcialmente compensada por reduções em outros componentes, como menor movimentação espontânea ou maior eficiência metabólica em tarefas cotidianas, resultando em aumento líquido do gasto diário inferior ao previsto exclusivamente pelo cálculo calórico do exercício. Esse fenômeno não invalida os benefícios do exercício físico; indica, sim, a necessidade de estratégias consistentes e sustentáveis ao longo do tempo, e não apenas isoladas.</p>
     <figure>
       <img src="images/metabolismo-compensacao.jpeg" alt="O que é compensação energética">
     </figure>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Papel da Musculação</h2>
@@ -170,30 +202,34 @@
       <img src="images/metabolismo-musculacao.jpeg" alt="Musculação: proteja seu motor">
     </figure>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Papel do Treinamento Cardiorrespiratório</h2>
-    <p>O treinamento cardiorrespiratório — caminhada, corrida, ciclismo, natação ou treinamento intervalado de alta intensidade (HIIT) — contribui para o aumento do gasto energético e para o condicionamento cardiovascular. A escolha da modalidade deve considerar a adequação individual e a capacidade de manutenção a longo prazo, mais do que a intensidade isolada.</p>
+    <p>O treinamento cardiorrespiratório (caminhada, corrida, ciclismo, natação ou treinamento intervalado de alta intensidade, o HIIT) contribui para o aumento do gasto energético e para o condicionamento cardiovascular. A escolha da modalidade deve considerar a adequação individual e a capacidade de manutenção a longo prazo, mais do que a intensidade isolada.</p>
     <figure>
       <img src="images/metabolismo-cardio.jpeg" alt="O famoso cardio - treinamento aeróbio">
     </figure>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Atividade Física Não Estruturada (NEAT)</h2>
-    <p>O NEAT compreende o gasto energético associado a atividades cotidianas fora do treino formal — uso de escadas, deslocamentos, tarefas domésticas, tempo em pé. Embora não eleve diretamente a TMB, o NEAT reduz o tempo em comportamento sedentário e contribui de forma relevante para o gasto energético total diário.</p>
+    <p>O NEAT compreende o gasto energético associado a atividades cotidianas fora do treino formal: uso de escadas, deslocamentos, tarefas domésticas, tempo em pé. Embora não eleve diretamente a TMB, o NEAT reduz o tempo em comportamento sedentário e contribui de forma relevante para o gasto energético total diário.</p>
     <figure>
       <img src="images/metabolismo-neat.jpeg" alt="Mova-se também fora do treino">
     </figure>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>O Corpo se Adapta</h2>
-    <p>Quando ocorre emagrecimento, o corpo passa a demandar menos energia, e podem ocorrer adaptações metabólicas adicionais. Isso não significa que o exercício "deixa de funcionar" — significa que a estratégia precisa ser mantida com constância e ajustada ao longo do tempo, em vez de tratada como um cálculo fixo.</p>
+    <p>Quando ocorre emagrecimento, o corpo passa a demandar menos energia, e podem ocorrer adaptações metabólicas adicionais. Isso não significa que o exercício "deixa de funcionar": significa que a estratégia precisa ser mantida com constância e ajustada ao longo do tempo, em vez de tratada como um cálculo fixo.</p>
     <figure>
       <img src="images/metabolismo-adaptacao.jpeg" alt="O corpo se adapta. E agora?">
     </figure>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Síntese Aplicada</h2>
@@ -203,6 +239,7 @@
     </figure>
     <p class="fonte">Fontes: Pontzer &amp; Trexler, Current Biology (2026); Hall, Obesity (2018).</p>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
 </main>
 
@@ -215,8 +252,10 @@
   <p>Agende sua avaliação:</p>
   <p style="margin-top:0.5rem;"><a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." target="_blank">Falar no WhatsApp</a></p>
   <p class="canais">Atendimento também disponível pelo <a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." target="_blank">MFITpersonal</a></p>
-  <p class="creditos">Site construído com ajuda do Claude, da Anthropic.</p>
+  <p class="creditos">Produção e Design: Vera Rosendo &middot; Desenvolvimento técnico: Claude (AI)</p>
 </footer>
+
+<a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" width="28" height="28" fill="#ffffff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.67-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2c-5.514 0-9.987 4.472-9.987 9.987 0 1.761.462 3.483 1.34 4.997L2 22l5.146-1.346a9.955 9.955 0 0 0 4.858 1.237h.004c5.514 0 9.987-4.472 9.987-9.987C21.995 6.472 17.518 2 12.004 2zm0 18.29a8.28 8.28 0 0 1-4.223-1.155l-.303-.18-3.153.825.842-3.076-.198-.317a8.264 8.264 0 0 1-1.267-4.4c0-4.573 3.72-8.293 8.302-8.293 4.573 0 8.293 3.72 8.293 8.293 0 4.573-3.72 8.303-8.293 8.303z"/></svg></a>
 
 </body>
 </html>

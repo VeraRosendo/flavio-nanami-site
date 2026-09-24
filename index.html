@@ -3,223 +3,273 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flávio Nanami | Personal Trainer</title>
-<meta name="description" content="Flávio Nanami: Personal Trainer especializado em hipertrofia, terceira idade e obesidade. Atendimento presencial no Espírito Santo e online.">
+<title>Flavio Nanami | Personal Trainer</title>
+<meta name="description" content="Flavio Nanami: Personal Trainer especializado em hipertrofia, terceira idade e obesidade. Atendimento presencial no Espírito Santo e online.">
+<link rel="icon" href="images/logo-flavio-nanami.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --preto: #111111;
-    --cinza-escuro: #333333;
-    --cinza-claro: #f5f5f5;
-    --branco: #ffffff;
-    --destaque: #c9a04a;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: var(--cinza-escuro);
-    line-height: 1.6;
-    background-color: var(--branco);
-  }
-  header {
-    background-color: var(--preto);
-    color: var(--branco);
-    padding: 1.2rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header .logo { font-size: 1.3rem; font-weight: bold; letter-spacing: 1px; }
-  nav a {
-    color: var(--branco);
-    text-decoration: none;
-    margin-left: 1.5rem;
-    font-size: 0.95rem;
-  }
-  nav a:hover { color: var(--destaque); }
-
-  .hero {
-    background-color: var(--cinza-claro);
-    padding: 5rem 2rem;
-    text-align: center;
-  }
-  .hero h1 {
-    font-size: 2.4rem;
-    margin-bottom: 0.5rem;
-    color: var(--preto);
-  }
-  .hero p.tagline {
-    font-size: 1.1rem;
-    max-width: 640px;
-    margin: 1rem auto 0.5rem;
-    color: var(--cinza-escuro);
-  }
-  .hero p.especialidade {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--destaque);
-    margin-top: 0.8rem;
-  }
-  .btn-cta {
-    display: inline-block;
-    margin-top: 2rem;
-    background-color: var(--preto);
-    color: var(--branco);
-    padding: 0.9rem 2.2rem;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: background-color 0.2s ease;
-  }
-  .btn-cta:hover { background-color: var(--destaque); }
-
-  section {
-    padding: 4rem 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1.2rem;
-    color: var(--preto);
-    border-bottom: 2px solid var(--destaque);
-    display: inline-block;
-    padding-bottom: 0.3rem;
-  }
-  section p { margin-bottom: 1rem; }
-
-  ul.especialidades {
-    list-style: none;
-    margin-top: 1.5rem;
-  }
-  ul.especialidades li {
-    padding: 1rem 1.2rem;
-    background-color: var(--cinza-claro);
-    border-left: 4px solid var(--destaque);
-    margin-bottom: 0.8rem;
-    border-radius: 2px;
-  }
-  ul.especialidades strong { color: var(--preto); }
-
-  .modalidades {
-    background-color: var(--cinza-claro);
-  }
-  .modalidades-grid {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
-  }
-  .modalidade-card {
-    flex: 1;
-    min-width: 240px;
-    background-color: var(--branco);
-    padding: 1.5rem;
-    border-radius: 4px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-  }
-  .btn-depoimento {
-    display: inline-block;
-    margin-top: 1rem;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--destaque);
-    border: 1px solid var(--destaque);
-    padding: 0.4rem 1rem;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.2s ease, color 0.2s ease;
-  }
-  .btn-depoimento:hover {
-    background-color: var(--destaque);
-    color: var(--branco);
-  }
-  .modalidade-card h3 {
-    color: var(--preto);
-    margin-bottom: 0.6rem;
-    font-size: 1.1rem;
-  }
-  .fonte {
-    font-size: 0.85rem;
-    color: #777777;
-    margin-top: 1.5rem;
-  }
-  .subtopico {
-    font-size: 1.05rem;
-    color: var(--preto);
-    margin-top: 1.6rem;
-    margin-bottom: 0.6rem;
-  }
-  .lista-topicos {
-    margin: 0 0 1rem 1.2rem;
-  }
-  .lista-topicos li {
-    margin-bottom: 0.3rem;
-  }
-
-  .orientacoes-grid {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
-  }
-  .orientacao-card {
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
-    padding: 1.5rem 1rem;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    text-decoration: none;
-    color: var(--cinza-escuro);
-    transition: border-color 0.2s ease;
-  }
-  .orientacao-card:hover { border-color: var(--destaque); }
-  .orientacao-card h3 { color: var(--preto); font-size: 1rem; margin-bottom: 0.4rem; }
-
-  footer {
-    background-color: var(--preto);
-    color: var(--branco);
-    text-align: center;
-    padding: 2.5rem 2rem;
-  }
-  footer a {
-    color: var(--branco);
-    text-decoration: none;
-    font-weight: 600;
-  }
-  footer a:hover { color: var(--destaque); }
-  footer .canais {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #cccccc;
-  }
-  footer .creditos {
-    margin-top: 1.5rem;
-    font-size: 0.75rem;
-    color: #888888;
-    font-style: italic;
-  }
-
-  @media (max-width: 600px) {
-    .hero h1 { font-size: 1.8rem; }
-    nav a { margin-left: 0.8rem; font-size: 0.85rem; }
-  }
+:root {
+--preto: #111111;
+--cinza-escuro: #333333;
+--cinza-claro: #f5f5f5;
+--branco: #ffffff;
+--destaque: #c9a04a;
+  --destaque-escuro: #8a6d26;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+h1, h2, h3, h4 { font-family: 'Oswald', 'Helvetica Neue', Arial, sans-serif; letter-spacing: 0.3px; }
+body {
+font-family: 'Helvetica Neue', Arial, sans-serif;
+color: var(--cinza-escuro);
+line-height: 1.6;
+background-color: var(--branco);
+}
+header {
+background-color: var(--preto);
+color: var(--branco);
+padding: 1.2rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+header .logo img { height: 48px; width: auto; vertical-align: middle; }
+nav a {
+color: var(--branco);
+text-decoration: none;
+margin-left: 1.5rem;
+font-size: 0.95rem;
+}
+nav a:hover { color: var(--destaque); }
+.hero {
+background-color: var(--cinza-claro);
+padding: 5rem 2rem;
+text-align: center;
+}
+.hero h1 {
+font-size: 2.4rem;
+margin-bottom: 0.5rem;
+color: var(--preto);
+}
+.hero p.tagline {
+font-size: 1.1rem;
+max-width: 640px;
+margin: 1rem auto 0.5rem;
+color: var(--cinza-escuro);
+}
+.hero p.especialidade {
+font-size: 1rem;
+font-weight: 600;
+color: var(--destaque-escuro);
+margin-top: 0.8rem;
+}
+.btn-cta {
+display: inline-block;
+margin-top: 2rem;
+background-color: var(--preto);
+color: var(--branco);
+padding: 0.9rem 2.2rem;
+text-decoration: none;
+border-radius: 4px;
+font-weight: 600;
+transition: background-color 0.2s ease;
+}
+.btn-cta:hover { background-color: var(--destaque); }
+section {
+padding: 4rem 2rem;
+max-width: 800px;
+margin: 0 auto;
+}
+section p { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+section h2 {
+font-size: 1.8rem;
+margin-bottom: 1.2rem;
+color: var(--preto);
+border-bottom: 2px solid var(--destaque);
+display: inline-block;
+padding-bottom: 0.3rem;
+}
+section p { margin-bottom: 1rem; }
+ul.especialidades {
+list-style: none;
+margin-top: 1.5rem;
+}
+ul.especialidades li {
+padding: 1rem 1.2rem;
+background-color: var(--cinza-claro);
+border-left: 4px solid var(--destaque);
+margin-bottom: 0.8rem;
+border-radius: 2px;
+}
+ul.especialidades strong { color: var(--preto); }
+.modalidades {
+background-color: var(--cinza-claro);
+}
+.modalidades-grid {
+display: flex;
+gap: 1.5rem;
+flex-wrap: wrap;
+margin-top: 1.5rem;
+}
+.modalidade-card {
+flex: 1;
+min-width: 240px;
+background-color: var(--branco);
+padding: 1.5rem;
+border-radius: 4px;
+box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.btn-depoimento {
+display: inline-block;
+margin-top: 1rem;
+font-size: 0.85rem;
+font-weight: 600;
+color: var(--destaque-escuro);
+border: 1px solid var(--destaque-escuro);
+padding: 0.4rem 1rem;
+border-radius: 4px;
+text-decoration: none;
+transition: background-color 0.2s ease, color 0.2s ease;
+}
+.btn-depoimento:hover {
+background-color: var(--destaque-escuro);
+color: var(--branco);
+}
+.card-icon {
+margin-bottom: 0.6rem;
+}
+.modalidade-card h3 {
+color: var(--preto);
+margin-bottom: 0.6rem;
+font-size: 1.1rem;
+}
+.fonte {
+font-size: 0.85rem;
+color: #777777;
+margin-top: 1.5rem;
+}
+.subtopico {
+font-size: 1.05rem;
+color: var(--preto);
+margin-top: 1.6rem;
+margin-bottom: 0.6rem;
+font-weight: 600;
+}
+summary.subtopico {
+cursor: pointer;
+list-style: none;
+margin-top: 0;
+}
+summary.subtopico::-webkit-details-marker { display: none; }
+summary.subtopico::after {
+content: '+';
+float: right;
+color: var(--destaque-escuro);
+font-weight: 700;
+}
+.topico-detalhe[open] summary.subtopico::after {
+content: '\2212';
+}
+.topico-detalhe {
+border-top: 1px solid #e5e5e5;
+padding-top: 0.9rem;
+margin-top: 0.9rem;
+}
+.topico-detalhe p, .topico-detalhe ul {
+margin-top: 0.7rem;
+}
+.lista-topicos {
+margin: 0 0 1rem 1.2rem;
+}
+.lista-topicos li {
+margin-bottom: 0.3rem;
+}
+.orientacoes-grid {
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+margin-top: 1.5rem;
+}
+.orientacao-card {
+flex: 1;
+min-width: 200px;
+text-align: center;
+padding: 1.5rem 1rem;
+border: 1px solid #e0e0e0;
+border-radius: 4px;
+text-decoration: none;
+color: var(--cinza-escuro);
+transition: border-color 0.2s ease;
+}
+.orientacao-card:hover { border-color: var(--destaque); }
+.orientacao-card h3 { color: var(--preto); font-size: 1rem; margin-bottom: 0.4rem; }
+.faq-item { margin-bottom: 1.5rem; }
+.faq-item h3 { color: var(--preto); margin-bottom: 0.4rem; font-size: 1.05rem; }
+.faq-item p { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+footer {
+background-color: var(--preto);
+color: var(--branco);
+text-align: center;
+padding: 2.5rem 2rem;
+}
+footer a {
+color: var(--branco);
+text-decoration: none;
+font-weight: 600;
+}
+footer a:hover { color: var(--destaque); }
+footer .canais {
+margin-top: 1rem;
+font-size: 0.9rem;
+color: #cccccc;
+}
+footer .creditos {
+margin-top: 1.5rem;
+font-size: 0.75rem;
+color: #888888;
+font-style: italic;
+}
+.whatsapp-float {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #25D366;
+color: #ffffff;
+border-radius: 50%;
+width: 56px;
+height: 56px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+text-decoration: none;
+font-size: 1.7rem;
+z-index: 999;
+transition: transform 0.2s ease;
+}
+.whatsapp-float:hover { transform: scale(1.08); }
+@media (max-width: 600px) {
+.hero h1 { font-size: 1.8rem; }
+nav a { margin-left: 0.8rem; font-size: 0.85rem; }
+}
 </style>
 </head>
 <body>
 
 <header id="topo">
-  <div class="logo"><img src="images/logo-flavio-nanami.png" alt="Flávio Nanami - Personal Trainer" style="height:48px; width:auto; vertical-align:middle;"></div>
+  <div class="logo"><img src="images/logo-flavio-nanami.png" alt="Flavio Nanami - Personal Trainer" style="height:48px; width:auto; vertical-align:middle;"></div>
   <nav>
     <a href="#sobre">Sobre</a>
     <a href="#atendimento">Atendimento</a>
     <a href="#orientacoes">Orientações</a>
+    <a href="#faq">FAQ</a>
     <a href="#contato">Contato</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h1>Flávio Nanami</h1>
+  <h1>Flavio Nanami</h1>
   <p class="tagline">Formação completa em Educação Física (licenciatura e bacharelado), com experiência consolidada, agora atendendo no Espírito Santo.</p>
   <p class="especialidade">Especialista em hipertrofia, obesidade e treino para a terceira idade</p>
   <a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." class="btn-cta" target="_blank">Agendar Avaliação</a>
@@ -227,7 +277,7 @@
 
 <section id="sobre">
   <h2>Sobre</h2>
-  <p>Flávio Nanami é formado em Educação Física, com licenciatura e bacharelado, o que une base pedagógica sólida a preparo técnico completo para prescrição e acompanhamento de treinos.</p>
+  <p>Flavio Nanami é formado em Educação Física, com licenciatura e bacharelado, o que une base pedagógica sólida a preparo técnico completo para prescrição e acompanhamento de treinos.</p>
   <p>Construiu sua trajetória em Manaus, onde consolidou experiência prática atendendo clientes com objetivos variados. Hoje atende no Espírito Santo, oferecendo treinos individualizados presenciais e também online, através da plataforma MFITpersonal.</p>
   <p><strong>Áreas de atuação:</strong></p>
   <ul class="especialidades">
@@ -236,18 +286,20 @@
     <li><strong>Obesidade:</strong> treinos elaborados com apoio técnico especializado, respeitando as particularidades de cada aluno</li>
   </ul>
 </section>
-<p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
+<p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
 <section id="atendimento" class="modalidades">
   <h2>Como Funciona o Atendimento</h2>
   <p>Atendimento autônomo, com flexibilidade para treinar presencialmente ou à distância.</p>
   <div class="modalidades-grid">
     <div class="modalidade-card">
+      <div class="card-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#8a6d26" stroke-width="1.8"><path d="M12 21s-7-6.5-7-11.5A7 7 0 0 1 19 9.5C19 14.5 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
       <h3>Presencial</h3>
       <p>Treino individualizado na academia que for mais conveniente para você.</p>
       <a href="depoimentos.html#presencial" class="btn-depoimento">Depoimento</a>
     </div>
     <div class="modalidade-card">
+      <div class="card-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#8a6d26" stroke-width="1.8"><rect x="3" y="4" width="18" height="13" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
       <h3>Online (MFITpersonal)</h3>
       <p>Anamnese completa, prescrição de treinos e acompanhamento de evolução pelo aplicativo, para quem está em qualquer lugar.</p>
       <a href="depoimentos.html#online" class="btn-depoimento">Depoimento</a>
@@ -259,91 +311,111 @@
     <p>O <strong>personal trainer</strong> é um profissional de exercício físico que atua de forma individualizada, planejando, orientando e acompanhando o treinamento de cada aluno de acordo com seus objetivos, nível de condicionamento, capacidades, limitações e evolução.</p>
     <p>Seu trabalho vai muito além de simplesmente selecionar exercícios.</p>
 
-    <h4 class="subtopico">1. Avaliar antes de prescrever</h4>
-    <p>O trabalho começa pela compreensão do aluno. O profissional pode analisar histórico de atividade física, objetivos, limitações, experiência de treinamento e, dentro de sua competência, realizar avaliações relacionadas à aptidão física e ao movimento. Essas informações permitem estabelecer uma linha de base, identificar necessidades e escolher estratégias mais adequadas para o treinamento.</p>
+    <details class="topico-detalhe">
+      <summary class="subtopico">1. Avaliar antes de prescrever</summary>
+      <p>O trabalho começa pela compreensão do aluno. O profissional pode analisar histórico de atividade física, objetivos, limitações, experiência de treinamento e, dentro de sua competência, realizar avaliações relacionadas à aptidão física e ao movimento. Essas informações permitem estabelecer uma linha de base, identificar necessidades e escolher estratégias mais adequadas para o treinamento.</p>
+    </details>
 
-    <h4 class="subtopico">2. Individualizar o treinamento</h4>
-    <p>Duas pessoas podem ter exatamente o mesmo objetivo (por exemplo, ganhar força) e precisar de programas completamente diferentes. O personal pode ajustar:</p>
-    <ul class="lista-topicos">
-      <li>exercícios;</li>
-      <li>cargas;</li>
-      <li>número de repetições;</li>
-      <li>séries;</li>
-      <li>intervalos;</li>
-      <li>amplitude de movimento;</li>
-      <li>frequência semanal;</li>
-      <li>velocidade de execução;</li>
-      <li>dificuldade;</li>
-      <li>ordem dos exercícios;</li>
-      <li>progressão do treinamento.</li>
-    </ul>
-    <p>A individualização é especialmente importante para pessoas com diferentes níveis de condicionamento, idosos e indivíduos que apresentam limitações funcionais.</p>
+    <details class="topico-detalhe">
+      <summary class="subtopico">2. Individualizar o treinamento</summary>
+      <p>Duas pessoas podem ter exatamente o mesmo objetivo (por exemplo, ganhar força) e precisar de programas completamente diferentes. O personal pode ajustar:</p>
+      <ul class="lista-topicos">
+        <li>exercícios;</li>
+        <li>cargas;</li>
+        <li>número de repetições;</li>
+        <li>séries;</li>
+        <li>intervalos;</li>
+        <li>amplitude de movimento;</li>
+        <li>frequência semanal;</li>
+        <li>velocidade de execução;</li>
+        <li>dificuldade;</li>
+        <li>ordem dos exercícios;</li>
+        <li>progressão do treinamento.</li>
+      </ul>
+      <p>A individualização é especialmente importante para pessoas com diferentes níveis de condicionamento, idosos e indivíduos que apresentam limitações funcionais.</p>
+    </details>
 
-    <h4 class="subtopico">3. Ensinar a executar os exercícios</h4>
-    <p>Uma das maiores contribuições do personal trainer é transformar um exercício em um movimento bem executado. Ele demonstra, observa e fornece orientações para melhorar:</p>
-    <ul class="lista-topicos">
-      <li>postura;</li>
-      <li>alinhamento;</li>
-      <li>trajetória do movimento;</li>
-      <li>amplitude;</li>
-      <li>controle;</li>
-      <li>respiração;</li>
-      <li>ritmo;</li>
-      <li>posicionamento das articulações;</li>
-      <li>utilização adequada dos equipamentos.</li>
-    </ul>
-    <p>Isso pode melhorar a eficiência do exercício e ajudar a reduzir riscos associados à execução inadequada.</p>
+    <details class="topico-detalhe">
+      <summary class="subtopico">3. Ensinar a executar os exercícios</summary>
+      <p>Uma das maiores contribuições do personal trainer é transformar um exercício em um movimento bem executado. Ele demonstra, observa e fornece orientações para melhorar:</p>
+      <ul class="lista-topicos">
+        <li>postura;</li>
+        <li>alinhamento;</li>
+        <li>trajetória do movimento;</li>
+        <li>amplitude;</li>
+        <li>controle;</li>
+        <li>respiração;</li>
+        <li>ritmo;</li>
+        <li>posicionamento das articulações;</li>
+        <li>utilização adequada dos equipamentos.</li>
+      </ul>
+      <p>Isso pode melhorar a eficiência do exercício e ajudar a reduzir riscos associados à execução inadequada.</p>
+    </details>
 
-    <h4 class="subtopico">4. Fazer o treinamento evoluir</h4>
-    <p>Um bom programa não permanece igual indefinidamente. O personal acompanha a resposta do aluno e modifica o treinamento conforme a adaptação acontece. A progressão pode ocorrer pelo aumento da carga, das repetições, do volume, da complexidade do movimento, da amplitude ou de outras variáveis. Assim, o profissional evita tanto um treinamento insuficiente para produzir adaptação quanto uma progressão excessivamente rápida.</p>
+    <details class="topico-detalhe">
+      <summary class="subtopico">4. Fazer o treinamento evoluir</summary>
+      <p>Um bom programa não permanece igual indefinidamente. O personal acompanha a resposta do aluno e modifica o treinamento conforme a adaptação acontece. A progressão pode ocorrer pelo aumento da carga, das repetições, do volume, da complexidade do movimento, da amplitude ou de outras variáveis. Assim, o profissional evita tanto um treinamento insuficiente para produzir adaptação quanto uma progressão excessivamente rápida.</p>
+    </details>
 
-    <h4 class="subtopico">5. Adaptar o exercício às limitações do aluno</h4>
-    <p>O exercício não precisa ser abandonado simplesmente porque determinada versão é difícil ou inadequada. O profissional pode regredir ou progredir um movimento, modificando sua dificuldade de acordo com a capacidade do aluno. A avaliação do movimento durante o próprio exercício pode, inclusive, fornecer informações para essa adaptação. Por exemplo:</p>
-    <p style="font-weight:600;">agachamento livre → agachamento assistido → sentar e levantar da cadeira</p>
-    <p>ou</p>
-    <p style="font-weight:600;">apoio bilateral → apoio reduzido → exercícios de equilíbrio mais desafiadores.</p>
+    <details class="topico-detalhe">
+      <summary class="subtopico">5. Adaptar o exercício às limitações do aluno</summary>
+      <p>O exercício não precisa ser abandonado simplesmente porque determinada versão é difícil ou inadequada. O profissional pode regredir ou progredir um movimento, modificando sua dificuldade de acordo com a capacidade do aluno. A avaliação do movimento durante o próprio exercício pode, inclusive, fornecer informações para essa adaptação. Por exemplo:</p>
+      <p style="font-weight:600;">agachamento livre → agachamento assistido → sentar e levantar da cadeira</p>
+      <p>ou</p>
+      <p style="font-weight:600;">apoio bilateral → apoio reduzido → exercícios de equilíbrio mais desafiadores.</p>
+    </details>
 
-    <h4 class="subtopico">6. Trabalhar diferentes componentes do condicionamento físico</h4>
-    <p>O condicionamento físico não é apenas força ou capacidade de correr. Um programa bem estruturado pode desenvolver:</p>
-    <ul class="lista-topicos">
-      <li>força muscular;</li>
-      <li>resistência muscular;</li>
-      <li>capacidade cardiorrespiratória;</li>
-      <li>mobilidade;</li>
-      <li>flexibilidade;</li>
-      <li>equilíbrio;</li>
-      <li>coordenação;</li>
-      <li>agilidade;</li>
-      <li>potência;</li>
-      <li>capacidade funcional.</li>
-    </ul>
-    <p>O ACSM inclui justamente esses diferentes componentes entre os conhecimentos necessários ao personal trainer.</p>
+    <details class="topico-detalhe">
+      <summary class="subtopico">6. Trabalhar diferentes componentes do condicionamento físico</summary>
+      <p>O condicionamento físico não é apenas força ou capacidade de correr. Um programa bem estruturado pode desenvolver:</p>
+      <ul class="lista-topicos">
+        <li>força muscular;</li>
+        <li>resistência muscular;</li>
+        <li>capacidade cardiorrespiratória;</li>
+        <li>mobilidade;</li>
+        <li>flexibilidade;</li>
+        <li>equilíbrio;</li>
+        <li>coordenação;</li>
+        <li>agilidade;</li>
+        <li>potência;</li>
+        <li>capacidade funcional.</li>
+      </ul>
+      <p>O ACSM inclui justamente esses diferentes componentes entre os conhecimentos necessários ao personal trainer.</p>
+    </details>
 
-    <h4 class="subtopico">7. Ajudar na prevenção de quedas</h4>
-    <p>Para pessoas mais velhas, essa função ganha importância especial. O personal pode incorporar ao treinamento exercícios de:</p>
-    <p style="font-weight:600;">força das pernas + equilíbrio + mobilidade + coordenação + agilidade + treinamento funcional.</p>
-    <p>Isso permite trabalhar não apenas a capacidade de ficar em pé, mas também ações fundamentais para a vida cotidiana: levantar-se, sentar-se, subir degraus, mudar de direção, caminhar e recuperar o equilíbrio.</p>
+    <details class="topico-detalhe">
+      <summary class="subtopico">7. Ajudar na prevenção de quedas</summary>
+      <p>Para pessoas mais velhas, essa função ganha importância especial. O personal pode incorporar ao treinamento exercícios de:</p>
+      <p style="font-weight:600;">força das pernas + equilíbrio + mobilidade + coordenação + agilidade + treinamento funcional.</p>
+      <p>Isso permite trabalhar não apenas a capacidade de ficar em pé, mas também ações fundamentais para a vida cotidiana: levantar-se, sentar-se, subir degraus, mudar de direção, caminhar e recuperar o equilíbrio.</p>
+    </details>
 
-    <h4 class="subtopico">8. Monitorar e medir a evolução</h4>
-    <p>O profissional pode acompanhar indicadores de desempenho ao longo do tempo, permitindo verificar se o treinamento está produzindo resultados. A evolução pode aparecer em:</p>
-    <ul class="lista-topicos">
-      <li>aumento da força;</li>
-      <li>maior número de repetições;</li>
-      <li>aumento das cargas;</li>
-      <li>melhora do equilíbrio;</li>
-      <li>maior resistência;</li>
-      <li>melhora da mobilidade;</li>
-      <li>execução mais eficiente;</li>
-      <li>maior capacidade para atividades cotidianas;</li>
-      <li>maior autonomia física.</li>
-    </ul>
-    <p>Isso transforma o treinamento em um processo mensurável, e não simplesmente em uma sucessão de exercícios.</p>
+    <details class="topico-detalhe">
+      <summary class="subtopico">8. Monitorar e medir a evolução</summary>
+      <p>O profissional pode acompanhar indicadores de desempenho ao longo do tempo, permitindo verificar se o treinamento está produzindo resultados. A evolução pode aparecer em:</p>
+      <ul class="lista-topicos">
+        <li>aumento da força;</li>
+        <li>maior número de repetições;</li>
+        <li>aumento das cargas;</li>
+        <li>melhora do equilíbrio;</li>
+        <li>maior resistência;</li>
+        <li>melhora da mobilidade;</li>
+        <li>execução mais eficiente;</li>
+        <li>maior capacidade para atividades cotidianas;</li>
+        <li>maior autonomia física.</li>
+      </ul>
+      <p>Isso transforma o treinamento em um processo mensurável, e não simplesmente em uma sucessão de exercícios.</p>
+    </details>
 
-    <h4 class="subtopico">9. Ajudar o aluno a manter a regularidade</h4>
-    <p>Existe ainda uma contribuição que não é puramente fisiológica: a adesão. Um personal pode estabelecer metas realistas, acompanhar a evolução, oferecer feedback, adaptar o programa quando surgem dificuldades e ajudar o aluno a construir uma relação mais consistente com o exercício. A comunicação, a definição conjunta de objetivos e o apoio comportamental fazem parte das competências modernas do treinamento personalizado.</p>
+    <details class="topico-detalhe">
+      <summary class="subtopico">9. Ajudar o aluno a manter a regularidade</summary>
+      <p>Existe ainda uma contribuição que não é puramente fisiológica: a adesão. Um personal pode estabelecer metas realistas, acompanhar a evolução, oferecer feedback, adaptar o programa quando surgem dificuldades e ajudar o aluno a construir uma relação mais consistente com o exercício. A comunicação, a definição conjunta de objetivos e o apoio comportamental fazem parte das competências modernas do treinamento personalizado.</p>
+    </details>
 
-    <h4 class="subtopico">10. Trabalhar em conjunto com outros profissionais</h4>
-    <p>O personal trainer não substitui médico, fisioterapeuta, nutricionista ou outros profissionais de saúde. Seu papel é reconhecer os limites de sua atuação e encaminhar o aluno quando uma situação exige avaliação ou intervenção de outro profissional. Esse limite faz parte do próprio escopo profissional.</p>
+    <details class="topico-detalhe">
+      <summary class="subtopico">10. Trabalhar em conjunto com outros profissionais</summary>
+      <p>O personal trainer não substitui médico, fisioterapeuta, nutricionista ou outros profissionais de saúde. Seu papel é reconhecer os limites de sua atuação e encaminhar o aluno quando uma situação exige avaliação ou intervenção de outro profissional. Esse limite faz parte do próprio escopo profissional.</p>
+    </details>
 
     <h3 style="font-size:1.35rem; color:var(--preto); margin-top:2.5rem; margin-bottom:1rem;">O verdadeiro valor do personal trainer</h3>
     <p>O maior valor de um bom personal trainer não está em conhecer uma lista enorme de exercícios. Está em saber responder, para cada pessoa:</p>
@@ -365,40 +437,70 @@
 
   <p class="fonte">Fonte: American College of Sports Medicine (ACSM), Scope of Practice for Certified Personal Trainers.</p>
 </section>
-<p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
+<p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
 <section id="orientacoes">
   <h2>Orientações</h2>
   <p>Conteúdo técnico para você entender melhor o próprio treino e o próprio corpo.</p>
   <div class="orientacoes-grid">
     <a href="fisiologia.html" class="orientacao-card">
+      <div class="card-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#8a6d26" stroke-width="1.8"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
       <h3>Fisiologia do Metabolismo</h3>
       <p>TMB, gasto energético e adaptação metabólica</p>
     </a>
     <a href="hipertrofia.html" class="orientacao-card">
+      <div class="card-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#8a6d26" stroke-width="1.8"><path d="M6.5 6.5v11M17.5 6.5v11M3 9v6M21 9v6M6.5 12h11"/></svg></div>
       <h3>Hipertrofia</h3>
       <p>Tensão mecânica, volume, falha e proteína</p>
     </a>
     <a href="terceira-idade.html" class="orientacao-card">
+      <div class="card-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#8a6d26" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
       <h3>Terceira Idade</h3>
       <p>Sarcopenia, saúde óssea e prevenção de quedas</p>
     </a>
     <a href="obesidade.html" class="orientacao-card">
+      <div class="card-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#8a6d26" stroke-width="1.8"><path d="M12 3v3M5.6 6.6l2 2M3 13h3M18 13h3M16.4 8.6l2-2"/><path d="M12 13l4-4"/><circle cx="12" cy="13" r="7"/></svg></div>
       <h3>Obesidade</h3>
       <p>Síndrome metabólica e abordagem multifatorial</p>
     </a>
   </div>
 </section>
-<p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
+<p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
+
+<section id="faq">
+  <h2>Perguntas Frequentes</h2>
+  <div class="faq-item">
+    <h3>Como funciona o primeiro contato?</h3>
+    <p>Você entra em contato pelo WhatsApp, conta seus objetivos e agenda uma avaliação inicial, presencial ou online.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Preciso ter experiência prévia com treino?</h3>
+    <p>Não. O treino é adaptado ao seu nível atual, seja você iniciante ou já experiente.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Como funciona o atendimento online?</h3>
+    <p>Pelo aplicativo MFITpersonal: anamnese completa, treinos com vídeo demonstrativo de cada exercício, e acompanhamento direto com o Flavio.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Preciso ir a uma academia específica?</h3>
+    <p>Não. O atendimento presencial é feito na academia que for mais conveniente para você.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Qual o valor das sessões?</h3>
+    <p>Os valores variam conforme o plano e a modalidade escolhida (presencial ou online). Fale pelo WhatsApp para receber os valores atualizados.</p>
+  </div>
+</section>
+<p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
 <footer id="contato">
   <h2 style="border:none; color:var(--branco);">Contato</h2>
   <p style="margin-top:1rem;">Agende sua avaliação:</p>
   <p style="margin-top:0.5rem;"><a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." target="_blank">Falar no WhatsApp</a></p>
   <p class="canais">Atendimento também disponível pelo <a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." target="_blank">MFITpersonal</a></p>
-  <p class="creditos">Site construído com ajuda do Claude, da Anthropic.</p>
+  <p class="creditos">Produção e Design: Vera Rosendo &middot; Desenvolvimento técnico: Claude (AI)</p>
 </footer>
+
+<a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" width="28" height="28" fill="#ffffff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.67-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2c-5.514 0-9.987 4.472-9.987 9.987 0 1.761.462 3.483 1.34 4.997L2 22l5.146-1.346a9.955 9.955 0 0 0 4.858 1.237h.004c5.514 0 9.987-4.472 9.987-9.987C21.995 6.472 17.518 2 12.004 2zm0 18.29a8.28 8.28 0 0 1-4.223-1.155l-.303-.18-3.153.825.842-3.076-.198-.317a8.264 8.264 0 0 1-1.267-4.4c0-4.573 3.72-8.293 8.302-8.293 4.573 0 8.293 3.72 8.293 8.293 0 4.573-3.72 8.303-8.293 8.303z"/></svg></a>
 
 </body>
 </html>
-

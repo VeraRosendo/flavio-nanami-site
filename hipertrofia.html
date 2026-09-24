@@ -3,119 +3,139 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hipertrofia | Flávio Nanami - Personal Trainer</title>
+<title>Hipertrofia | Flavio Nanami - Personal Trainer</title>
 <meta name="description" content="Treinos voltados a ganho de massa muscular e desempenho, com prescrição individualizada.">
+<link rel="icon" href="images/logo-flavio-nanami.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --preto: #111111;
-    --cinza-escuro: #333333;
-    --cinza-claro: #f5f5f5;
-    --branco: #ffffff;
-    --destaque: #c9a04a;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: var(--cinza-escuro);
-    line-height: 1.6;
-    background-color: var(--branco);
-  }
-  header {
-    background-color: var(--preto);
-    color: var(--branco);
-    padding: 1.2rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header .logo img { height: 48px; width: auto; vertical-align: middle; }
-  nav a {
-    color: var(--branco);
-    text-decoration: none;
-    margin-left: 1.5rem;
-    font-size: 0.95rem;
-  }
-  nav a:hover { color: var(--destaque); }
-
-  .page-hero {
-    background-color: var(--cinza-claro);
-    padding: 3.5rem 2rem;
-    text-align: center;
-  }
-  .page-hero h1 {
-    font-size: 2.2rem;
-    color: var(--preto);
-  }
-  .page-hero p {
-    max-width: 640px;
-    margin: 1rem auto 0;
-    color: var(--cinza-escuro);
-  }
-
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-  }
-  article + article { margin-top: 3.5rem; }
-  article h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1.2rem;
-    color: var(--preto);
-    border-bottom: 2px solid var(--destaque);
-    display: inline-block;
-    padding-bottom: 0.3rem;
-  }
-  article p { margin-bottom: 1rem; }
-  article figure { margin: 1.8rem 0; text-align: center; }
-  article figure img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.12);
-  }
-  article .fonte { font-size: 0.85rem; color: #777777; margin-top: 1.5rem; }
-
-  .cta-box {
-    background-color: var(--cinza-claro);
-    text-align: center;
-    padding: 3rem 2rem;
-    margin-top: 2rem;
-  }
-  .cta-box p { margin-bottom: 1.5rem; font-size: 1.05rem; }
-  .btn-cta {
-    display: inline-block;
-    background-color: var(--preto);
-    color: var(--branco);
-    padding: 0.9rem 2.2rem;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: background-color 0.2s ease;
-  }
-  .btn-cta:hover { background-color: var(--destaque); }
-
-  footer {
-    background-color: var(--preto);
-    color: var(--branco);
-    text-align: center;
-    padding: 2.5rem 2rem;
-  }
-  footer a { color: var(--branco); text-decoration: none; font-weight: 600; }
-  footer a:hover { color: var(--destaque); }
-  footer .canais { margin-top: 1rem; font-size: 0.9rem; color: #cccccc; }
-  footer .creditos { margin-top: 1.5rem; font-size: 0.75rem; color: #888888; font-style: italic; }
-
-  @media (max-width: 600px) {
-    .page-hero h1 { font-size: 1.7rem; }
-    nav a { margin-left: 0.8rem; font-size: 0.85rem; }
-  }
+:root {
+--preto: #111111;
+--cinza-escuro: #333333;
+--cinza-claro: #f5f5f5;
+--branco: #ffffff;
+--destaque: #c9a04a;
+  --destaque-escuro: #8a6d26;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+h1, h2, h3, h4 { font-family: 'Oswald', 'Helvetica Neue', Arial, sans-serif; letter-spacing: 0.3px; }
+body {
+font-family: 'Helvetica Neue', Arial, sans-serif;
+color: var(--cinza-escuro);
+line-height: 1.6;
+background-color: var(--branco);
+}
+header {
+background-color: var(--preto);
+color: var(--branco);
+padding: 1.2rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+header .logo img { height: 48px; width: auto; vertical-align: middle; }
+nav a {
+color: var(--branco);
+text-decoration: none;
+margin-left: 1.5rem;
+font-size: 0.95rem;
+}
+nav a:hover { color: var(--destaque); }
+.page-hero {
+background-color: var(--cinza-claro);
+padding: 3.5rem 2rem;
+text-align: center;
+}
+.page-hero h1 {
+font-size: 2.2rem;
+color: var(--preto);
+}
+.page-hero p {
+max-width: 640px;
+margin: 1rem auto 0;
+color: var(--cinza-escuro);
+}
+main {
+max-width: 800px;
+margin: 0 auto;
+padding: 3rem 2rem;
+}
+article + article { margin-top: 3.5rem; }
+article h2 {
+font-size: 1.6rem;
+margin-bottom: 1.2rem;
+color: var(--preto);
+border-bottom: 2px solid var(--destaque);
+display: inline-block;
+padding-bottom: 0.3rem;
+}
+article p { margin-bottom: 1rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+article figure { margin: 1.8rem 0; text-align: center; }
+article figure img {
+max-width: 100%;
+height: auto;
+border-radius: 6px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+article .fonte { font-size: 0.85rem; color: #777777; margin-top: 1.5rem; }
+.cta-box {
+background-color: var(--cinza-claro);
+text-align: center;
+padding: 3rem 2rem;
+margin-top: 2rem;
+}
+.cta-box p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+.btn-cta {
+display: inline-block;
+background-color: var(--preto);
+color: var(--branco);
+padding: 0.9rem 2.2rem;
+text-decoration: none;
+border-radius: 4px;
+font-weight: 600;
+transition: background-color 0.2s ease;
+}
+.btn-cta:hover { background-color: var(--destaque); }
+footer {
+background-color: var(--preto);
+color: var(--branco);
+text-align: center;
+padding: 2.5rem 2rem;
+}
+footer a { color: var(--branco); text-decoration: none; font-weight: 600; }
+footer a:hover { color: var(--destaque); }
+footer .canais { margin-top: 1rem; font-size: 0.9rem; color: #cccccc; }
+footer .creditos { margin-top: 1.5rem; font-size: 0.75rem; color: #888888; font-style: italic; }
+.whatsapp-float {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #25D366;
+color: #ffffff;
+border-radius: 50%;
+width: 56px;
+height: 56px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+text-decoration: none;
+font-size: 1.7rem;
+z-index: 999;
+transition: transform 0.2s ease;
+}
+.whatsapp-float:hover { transform: scale(1.08); }
+@media (max-width: 600px) {
+.page-hero h1 { font-size: 1.7rem; }
+nav a { margin-left: 0.8rem; font-size: 0.85rem; }
+}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="logo"><a href="index.html"><img src="images/logo-flavio-nanami.png" alt="Flávio Nanami - Personal Trainer"></a></div>
+<header id="topo">
+  <div class="logo"><a href="index.html"><img src="images/logo-flavio-nanami.png" alt="Flavio Nanami - Personal Trainer"></a></div>
   <nav>
     <a href="index.html#sobre">Sobre</a>
     <a href="index.html#atendimento">Atendimento</a>
@@ -135,6 +155,7 @@
     <h2>Panorama Científico Atual</h2>
     <p>A ciência da hipertrofia muscular evoluiu significativamente nas últimas décadas, resultando da integração entre estudos de treinamento resistido, fisiologia do exercício, nutrição, biomecânica e biologia molecular. Entre os pesquisadores contemporâneos de maior relevância estão Brad Schoenfeld, autor de importantes revisões sistemáticas sobre volume e organização do treinamento; Stuart Phillips, referência internacional em metabolismo e síntese proteica muscular; e Michael Roberts, cuja pesquisa aborda os mecanismos celulares e moleculares envolvidos na hipertrofia, incluindo mTORC1, síntese proteica, biogênese ribossômica e células satélite.</p>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Tensão Mecânica: o Principal Estímulo</h2>
@@ -142,12 +163,14 @@
     <p>Isso não significa que seja necessário utilizar cargas máximas: a hipertrofia pode ocorrer com uma ampla faixa de cargas, desde que o exercício produza esforço suficiente e haja progressão adequada do treinamento.</p>
     <p>O chamado "pump", a sensação de queimação e o estresse metabólico podem acompanhar um treinamento eficaz, mas não devem ser considerados requisitos independentes para produzir hipertrofia. Da mesma forma, o dano muscular não é um objetivo do treinamento e não precisa ser elevado para que ocorra crescimento.</p>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Sobrecarga Progressiva</h2>
     <p>O músculo se adapta ao estímulo ao longo do tempo. Para continuar produzindo adaptações, o treinamento precisa ser progressivamente ajustado. A progressão pode ocorrer por diferentes caminhos: aumento da carga, aumento do número de repetições, aumento do número de séries, melhora da amplitude de movimento, melhora da execução técnica ou aumento da dificuldade do exercício.</p>
     <p>Sobrecarga progressiva, portanto, não significa simplesmente colocar mais peso na barra.</p>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Proximidade da Falha</h2>
@@ -159,24 +182,28 @@
     </ul>
     <p>O treinamento não precisa levar todas as séries até a falha. A evidência atual indica que a proximidade da falha é importante, mas a falha absoluta não é obrigatória para produzir hipertrofia.</p>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Volume de Treinamento</h2>
     <p>O volume é uma das variáveis mais importantes do treinamento. De modo geral, as pesquisas mostram relação positiva entre maior volume e maior hipertrofia, porém com retornos progressivamente menores. Por isso, não é cientificamente adequado afirmar que existe uma faixa universal de "10 a 20 séries semanais" ideal para todas as pessoas.</p>
     <p>O volume adequado depende de fatores como nível de treinamento, idade, exercício escolhido, intensidade, frequência semanal, capacidade de recuperação, alimentação, sono e objetivo individual. Mais volume não significa automaticamente mais crescimento.</p>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Intervalo de Descanso</h2>
     <p>O descanso entre séries deve ser suficiente para permitir que o indivíduo mantenha boa produção de força e qualidade de execução. A evidência atual favorece, em muitos casos, intervalos superiores a 60 segundos, especialmente quando o objetivo é preservar o desempenho nas séries seguintes.</p>
     <p>Não há, no entanto, necessidade universal de descansar exatamente 2 ou 3 minutos, e a evidência recente não demonstra benefício claro de intervalos superiores a aproximadamente 90 segundos para a hipertrofia em todas as situações. Na prática, exercícios multiarticulares e cargas maiores frequentemente exigem mais recuperação do que exercícios isolados.</p>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Síntese Proteica e Balanço Proteico Muscular</h2>
     <p>O crescimento muscular depende de um balanço proteico muscular positivo ao longo do tempo. O treinamento resistido aumenta a síntese de proteínas musculares, e a ingestão de proteína fornece os aminoácidos necessários para a construção de novas proteínas. A combinação entre exercício resistido e alimentação adequada favorece a manutenção ou o aumento da massa muscular.</p>
     <p>A via mTORC1 participa centralmente desse processo, mas a hipertrofia não pode ser reduzida a uma única via molecular: outros mecanismos também participam da adaptação, incluindo alterações na capacidade translacional, biogênese ribossômica e a participação de células satélite.</p>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Necessidade de Proteína</h2>
@@ -184,6 +211,7 @@
     <p>Assim, 1,6 g/kg/dia pode ser utilizado como referência prática, enquanto valores próximos a 2,0-2,2 g/kg/dia podem ser considerados em situações específicas, sem que isso signifique que todos precisem consumir essa quantidade.</p>
     <p>Para pessoas idosas, a recomendação deve ser individualizada: diretrizes voltadas ao envelhecimento geralmente indicam pelo menos 1,0 a 1,2 g/kg/dia, com valores iguais ou superiores a 1,2 g/kg/dia frequentemente considerados para idosos fisicamente ativos.</p>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <article>
     <h2>Modelo Aplicado</h2>
@@ -191,6 +219,7 @@
     <p>O ponto mais importante é que a hipertrofia não depende de um único exercício, número mágico de repetições, quantidade fixa de séries ou uma única via molecular. Ela resulta da interação entre estímulo mecânico adequado, esforço, volume suficiente, progressão, recuperação e disponibilidade de nutrientes.</p>
     <p class="fonte">Fontes: Schoenfeld, Journal of Strength and Conditioning Research (2010); Morton et al., British Journal of Sports Medicine (2018); Roberts et al., Physiological Reviews (2023).</p>
   </article>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
 </main>
 
@@ -203,8 +232,10 @@
   <p>Agende sua avaliação:</p>
   <p style="margin-top:0.5rem;"><a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." target="_blank">Falar no WhatsApp</a></p>
   <p class="canais">Atendimento também disponível pelo <a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." target="_blank">MFITpersonal</a></p>
-  <p class="creditos">Site construído com ajuda do Claude, da Anthropic.</p>
+  <p class="creditos">Produção e Design: Vera Rosendo &middot; Desenvolvimento técnico: Claude (AI)</p>
 </footer>
+
+<a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" width="28" height="28" fill="#ffffff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.67-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2c-5.514 0-9.987 4.472-9.987 9.987 0 1.761.462 3.483 1.34 4.997L2 22l5.146-1.346a9.955 9.955 0 0 0 4.858 1.237h.004c5.514 0 9.987-4.472 9.987-9.987C21.995 6.472 17.518 2 12.004 2zm0 18.29a8.28 8.28 0 0 1-4.223-1.155l-.303-.18-3.153.825.842-3.076-.198-.317a8.264 8.264 0 0 1-1.267-4.4c0-4.573 3.72-8.293 8.302-8.293 4.573 0 8.293 3.72 8.293 8.293 0 4.573-3.72 8.303-8.293 8.303z"/></svg></a>
 
 </body>
 </html>

@@ -5,142 +5,159 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Depoimentos | Flavio Nanami - Personal Trainer</title>
 <meta name="description" content="Depoimentos de alunos sobre o acompanhamento presencial e online com o Flavio Nanami, Personal Trainer.">
+<link rel="icon" href="images/logo-flavio-nanami.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --preto: #111111;
-    --cinza-escuro: #333333;
-    --cinza-claro: #f5f5f5;
-    --branco: #ffffff;
-    --destaque: #c9a04a;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: var(--cinza-escuro);
-    line-height: 1.6;
-    background-color: var(--branco);
-  }
-  header {
-    background-color: var(--preto);
-    color: var(--branco);
-    padding: 1.2rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header .logo img { height: 48px; width: auto; vertical-align: middle; }
-  nav a {
-    color: var(--branco);
-    text-decoration: none;
-    margin-left: 1.5rem;
-    font-size: 0.95rem;
-  }
-  nav a:hover { color: var(--destaque); }
-
-  .page-hero {
-    background-color: var(--cinza-claro);
-    padding: 3.5rem 2rem;
-    text-align: center;
-  }
-  .page-hero h1 {
-    font-size: 2.2rem;
-    color: var(--preto);
-  }
-  .page-hero p {
-    max-width: 640px;
-    margin: 1rem auto 0;
-    color: var(--cinza-escuro);
-  }
-
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-  }
-  section.categoria + section.categoria { margin-top: 3.5rem; }
-  section.categoria h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1.2rem;
-    color: var(--preto);
-    border-bottom: 2px solid var(--destaque);
-    display: inline-block;
-    padding-bottom: 0.3rem;
-  }
-
-  .depoimento-card {
-    margin-top: 1.5rem;
-    background-color: var(--cinza-claro);
-    border-radius: 6px;
-    padding: 2.2rem 2.2rem;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
-  }
-  .depoimento-texto {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: var(--cinza-escuro);
-  }
-  .depoimento-texto p {
-    margin-bottom: 1rem;
-  }
-  .depoimento-assinatura {
-    font-family: 'Caveat', cursive;
-    font-size: 1.9rem;
-    font-weight: 600;
-    color: var(--destaque);
-    text-align: right;
-    margin-top: 0.5rem;
-  }
-  .em-breve {
-    color: #888888;
-    font-style: italic;
-    margin-top: 1rem;
-  }
-
-  .cta-box {
-    background-color: var(--cinza-claro);
-    text-align: center;
-    padding: 3rem 2rem;
-    margin-top: 2rem;
-  }
-  .cta-box p { margin-bottom: 1.5rem; font-size: 1.05rem; }
-  .btn-cta {
-    display: inline-block;
-    background-color: var(--preto);
-    color: var(--branco);
-    padding: 0.9rem 2.2rem;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: background-color 0.2s ease;
-  }
-  .btn-cta:hover { background-color: var(--destaque); }
-
-  footer {
-    background-color: var(--preto);
-    color: var(--branco);
-    text-align: center;
-    padding: 2.5rem 2rem;
-  }
-  footer a { color: var(--branco); text-decoration: none; font-weight: 600; }
-  footer a:hover { color: var(--destaque); }
-  footer .canais { margin-top: 1rem; font-size: 0.9rem; color: #cccccc; }
-  footer .creditos { margin-top: 1.5rem; font-size: 0.75rem; color: #888888; font-style: italic; }
-
-  @media (max-width: 600px) {
-    .page-hero h1 { font-size: 1.7rem; }
-    nav a { margin-left: 0.8rem; font-size: 0.85rem; }
-    .depoimento-card { padding: 1.6rem 1.4rem; }
-  }
+:root {
+--preto: #111111;
+--cinza-escuro: #333333;
+--cinza-claro: #f5f5f5;
+--branco: #ffffff;
+--destaque: #c9a04a;
+  --destaque-escuro: #8a6d26;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+h1, h2, h3, h4 { font-family: 'Oswald', 'Helvetica Neue', Arial, sans-serif; letter-spacing: 0.3px; }
+body {
+font-family: 'Helvetica Neue', Arial, sans-serif;
+color: var(--cinza-escuro);
+line-height: 1.6;
+background-color: var(--branco);
+}
+header {
+background-color: var(--preto);
+color: var(--branco);
+padding: 1.2rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+header .logo img { height: 48px; width: auto; vertical-align: middle; }
+nav a {
+color: var(--branco);
+text-decoration: none;
+margin-left: 1.5rem;
+font-size: 0.95rem;
+}
+nav a:hover { color: var(--destaque); }
+.page-hero {
+background-color: var(--cinza-claro);
+padding: 3.5rem 2rem;
+text-align: center;
+}
+.page-hero h1 {
+font-size: 2.2rem;
+color: var(--preto);
+}
+.page-hero p {
+max-width: 640px;
+margin: 1rem auto 0;
+color: var(--cinza-escuro);
+}
+main {
+max-width: 800px;
+margin: 0 auto;
+padding: 3rem 2rem;
+}
+section.categoria + section.categoria { margin-top: 3.5rem; }
+section.categoria h2 {
+font-size: 1.6rem;
+margin-bottom: 1.2rem;
+color: var(--preto);
+border-bottom: 2px solid var(--destaque);
+display: inline-block;
+padding-bottom: 0.3rem;
+}
+.depoimento-card {
+margin-top: 1.5rem;
+background-color: var(--cinza-claro);
+border-radius: 6px;
+padding: 2.2rem 2.2rem;
+box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+.depoimento-texto {
+font-family: 'Times New Roman', Times, serif;
+font-style: italic;
+font-size: 1.05rem;
+line-height: 1.7;
+color: var(--cinza-escuro);
+}
+.depoimento-texto p { margin-bottom: 1rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+.depoimento-assinatura {
+font-family: 'Caveat', cursive;
+font-size: 1.9rem;
+font-weight: 600;
+color: var(--destaque-escuro);
+text-align: right;
+margin-top: 0.5rem;
+}
+.em-breve {
+color: #888888;
+font-style: italic;
+margin-top: 1rem;
+}
+.cta-box {
+background-color: var(--cinza-claro);
+text-align: center;
+padding: 3rem 2rem;
+margin-top: 2rem;
+}
+.cta-box p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+.btn-cta {
+display: inline-block;
+background-color: var(--preto);
+color: var(--branco);
+padding: 0.9rem 2.2rem;
+text-decoration: none;
+border-radius: 4px;
+font-weight: 600;
+transition: background-color 0.2s ease;
+}
+.btn-cta:hover { background-color: var(--destaque); }
+footer {
+background-color: var(--preto);
+color: var(--branco);
+text-align: center;
+padding: 2.5rem 2rem;
+}
+footer a { color: var(--branco); text-decoration: none; font-weight: 600; }
+footer a:hover { color: var(--destaque); }
+footer .canais { margin-top: 1rem; font-size: 0.9rem; color: #cccccc; }
+footer .creditos { margin-top: 1.5rem; font-size: 0.75rem; color: #888888; font-style: italic; }
+.whatsapp-float {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #25D366;
+color: #ffffff;
+border-radius: 50%;
+width: 56px;
+height: 56px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+text-decoration: none;
+font-size: 1.7rem;
+z-index: 999;
+transition: transform 0.2s ease;
+}
+.whatsapp-float:hover { transform: scale(1.08); }
+@media (max-width: 600px) {
+.page-hero h1 { font-size: 1.7rem; }
+nav a { margin-left: 0.8rem; font-size: 0.85rem; }
+.depoimento-card { padding: 1.6rem 1.4rem; }
+}
 </style>
 </head>
 <body>
 
-<header>
+<header id="topo">
   <div class="logo"><a href="index.html"><img src="images/logo-flavio-nanami.png" alt="Flavio Nanami - Personal Trainer"></a></div>
   <nav>
     <a href="index.html#sobre">Sobre</a>
@@ -167,6 +184,7 @@
       <p class="depoimento-assinatura">Igor</p>
     </div>
   </section>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
   <section class="categoria" id="online">
     <h2>Online (MFITpersonal)</h2>
@@ -184,6 +202,7 @@
       <p class="depoimento-assinatura">V.R. ❤</p>
     </div>
   </section>
+  <p style="text-align:center; margin:1rem 0;"><a href="#topo" style="font-size:0.85rem; color:var(--destaque-escuro); text-decoration:none; font-weight:600;">&uarr; Voltar ao topo</a></p>
 
 </main>
 
@@ -196,8 +215,10 @@
   <p>Agende sua avaliação:</p>
   <p style="margin-top:0.5rem;"><a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." target="_blank">Falar no WhatsApp</a></p>
   <p class="canais">Atendimento também disponível pelo <a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." target="_blank">MFITpersonal</a></p>
-  <p class="creditos">Site construído com ajuda do Claude, da Anthropic.</p>
+  <p class="creditos">Produção e Design: Vera Rosendo &middot; Desenvolvimento técnico: Claude (AI)</p>
 </footer>
+
+<a href="https://wa.me/5592982561530?text=Quero%20informa%C3%A7%C3%B5es%20para%20atendimento%20on-line%20e%20presencial." class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" width="28" height="28" fill="#ffffff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.67-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2c-5.514 0-9.987 4.472-9.987 9.987 0 1.761.462 3.483 1.34 4.997L2 22l5.146-1.346a9.955 9.955 0 0 0 4.858 1.237h.004c5.514 0 9.987-4.472 9.987-9.987C21.995 6.472 17.518 2 12.004 2zm0 18.29a8.28 8.28 0 0 1-4.223-1.155l-.303-.18-3.153.825.842-3.076-.198-.317a8.264 8.264 0 0 1-1.267-4.4c0-4.573 3.72-8.293 8.302-8.293 4.573 0 8.293 3.72 8.293 8.293 0 4.573-3.72 8.303-8.293 8.303z"/></svg></a>
 
 </body>
 </html>
