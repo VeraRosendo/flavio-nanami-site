@@ -34,7 +34,25 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
-header .logo img { height: 48px; width: auto; vertical-align: middle; }
+header .logo { display: flex; align-items: center; }
+.logo-mark {
+  height: 40px;
+  width: auto;
+  animation: spin-logo 7s linear infinite;
+  transform-origin: 50% 52%;
+}
+.logo-text {
+  height: 20px;
+  width: auto;
+  margin-left: 10px;
+}
+@keyframes spin-logo {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-mark { animation: none; }
+}
 nav a {
 color: var(--branco);
 text-decoration: none;
@@ -143,7 +161,7 @@ nav a { margin-left: 0.8rem; font-size: 0.85rem; }
 <body>
 
 <header id="topo">
-  <div class="logo"><a href="index.html"><img src="images/logo-flavio-nanami.png" alt="Flavio Nanami - Personal Trainer"></a></div>
+  <div class="logo"><a href="index.html"><img src="images/logo-triangulo.png" alt="Flavio Nanami" class="logo-mark"><img src="images/logo-texto.png" alt="Personal Trainer" class="logo-text"></a></div>
   <nav>
     <a href="index.html#sobre">Sobre</a>
     <a href="index.html#atendimento">Atendimento</a>
